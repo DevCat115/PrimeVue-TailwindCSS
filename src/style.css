@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter var", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-variation-settings: normal;
+  --font-family: "Inter var", sans-serif;
+  --font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+
+  --primary-50: 236 253 245;
+  --primary-100: 209 250 229;
+  --primary-200: 167 243 208;
+  --primary-300: 110 231 183;
+  --primary-400: 52 211 153;
+  --primary-500: 16 185 129;
+  --primary-600: 5 150 105;
+  --primary-700: 4 120 87;
+  --primary-800: 6 95 70;
+  --primary-900: 4 78 56;
+  --primary-950: 2 44 34;
+
+  --primary-50: 239 246 255; /* lightest blue */
+  --primary-100: 219 234 254; /* very light blue */
+  --primary-200: 191 219 254; /* light blue */
+  --primary-300: 147 197 253; /* moderate light blue */
+  --primary-400: 96 165 250; /* medium blue */
+  --primary-500: 59 130 246; /* standard blue */
+  --primary-600: 37 99 235; /* slightly darker blue */
+  --primary-700: 29 78 216; /* dark blue */
+  --primary-800: 30 64 175; /* very dark blue */
+  --primary-900: 30 58 138; /* near navy blue */
+  --primary-950: 23 37 84; /* navy blue */
+
+  --surface-0: 255 255 255;
+  --surface-50: 249 250 251;
+  --surface-100: 243 244 246;
+  --surface-200: 229 231 235;
+  --surface-300: 209 213 219;
+  --surface-400: 156 163 175;
+  --surface-500: 107 114 128;
+  --surface-600: 75 85 99;
+  --surface-700: 55 65 81;
+  --surface-800: 31 41 55;
+  --surface-900: 17 24 39;
+  --surface-950: 8 8 8;
+
+  --base: 0, 81, 187;
+  --base-alpha-4: 0, 101, 234, 0.04;
+  --base-alpha-12: 0, 101, 234, 0.12;
+  --base-alpha-20: 0, 101, 234, 0.2;
+  --base-alpha-30: 0, 101, 234, 0.3;
+  --base-alpha-58: 0, 101, 234, 0.58;
+  --base-light-20: 51, 132, 238;
+  --base-dark-20: 0, 81, 187;
+  --red: 229, 57, 53;
+  --red-alpha-8: 229, 57, 53, 0.08;
+  --green: 67, 160, 71;
+  --green-alpha-8: 67, 160, 71, 0.08;
+  --black: 10, 29, 55;
+  --black-10: 25, 43, 68;
+  --black-40: 102, 114, 130;
+  --black-60: 153, 161, 172;
+  --black-alpha-0: 10, 29, 55, 0;
+  --black-alpha-1: 10, 29, 55, 0.01;
+  --black-alpha-3: 10, 29, 55, 0.03;
+  --black-alpha-6: 10, 29, 55, 0.06;
+  --black-alpha-10: 10, 29, 55, 0.1;
+  --black-alpha-12: 10, 29, 55, 0.12;
+  --black-alpha-20: 10, 29, 55, 0.2;
+  --black-94: 240, 241, 243;
+  --black-96: 245, 246, 247;
+  --black-98: 250, 250, 251;
+  --white: 255, 255, 255;
+  --white-alpha-6: 255, 255, 255, 0.06;
+  --white-alpha-20: 255, 255, 255, 0.2;
+  --white-alpha-88: 255, 255, 255, 0.88;
+  --white-dark-alpha-78: 240, 240, 240, 0.78;
+  --ch-green: 106, 153, 78;
+  --ch-green-light: 167, 201, 87;
+  --ch-green-dark: 56, 102, 65;
+  --ch-red: 193, 18, 31;
+  --ch-red-dark: 120, 0, 0;
+  --red-dark: 197, 73, 73;
+  --orange-dark: 235, 116, 51;
+  --yellow-dark: 227, 185, 78;
+  --green-dark: 73, 126, 77;
+  --indigo-dark: 72, 79, 152;
+  --purple-dark: 110, 67, 163;
+  --red-light: 246, 223, 223;
+  --orange-light: 253, 233, 217;
+  --yellow-light: 254, 242, 222;
+  --green-light: 224, 236, 224;
+  --indigo-light: 223, 225, 239;
+  --purple-light: 233, 221, 240;
+  --brown: 101, 82, 79;
+  --clay: 81, 91, 96;
+  --lime: 155, 146, 69;
+  --cyan: 51, 128, 131;
+  --blue: 61, 108, 180;
+  --pink: 160, 62, 114;
+  --brown-light: 239, 235, 233;
+  --clay-light: 236, 239, 241;
+  --lime-light: 249, 251, 231;
+  --cyan-light: 224, 242, 241;
+  --blue-light: 227, 242, 253;
+  --pink-light: 252, 228, 236;
+
+  --primary: var(--primary-500);
+  --primary-inverse: var(--surface-0);
+  --primary-hover: var(--primary-600);
+  --primary-active-color: var(--primary-600);
+
+  --primary-highlight-opacity: 0.1;
+  --primary-highlight-inverse: var(--primary-700);
+  --primary-highlight-hover-opacity: 0.2;
+}
+
+:root {
+  --body-bg: rgb(var(--surface-50));
+  --body-text-color: rgb(var(--surface-900));
+  --card-border: 1px solid var(--border-color);
+  --card-bg: rgb(var(--surface-0));
+  --border-color: rgb(var(--surface-200));
+}
+
+:root[class="dark"] {
+  --body-bg: rgb(var(--surface-950));
+  --body-text-color: rgb(var(--surface-50));
+  --card-border: 1px solid transparent;
+  --card-bg: rgb(var(--surface-900));
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--body-bg);
+  font-weight: normal;
+  color: var(--body-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scalein {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.8);
+    transition: transform 0.12s cubic-bezier(0, 0, 0.2, 1),
+      opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: auto;
+  }
+}
+@keyframes slideup {
+  0% {
+    max-height: 1000px;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+
+.scalein {
+  animation: scalein 150ms linear;
+}
+
+.fadein {
+  animation: fadein 150ms linear;
+}
+
+.fadeout {
+  animation: fadeout 150ms linear;
+}
+
+.slidedown {
+  animation: slidedown 0.45s ease-in-out;
+}
+
+.slideup {
+  animation: slideup 0.45s cubic-bezier(0, 1, 0, 1);
+}
+
+.layout-ripple-disabled [data-pc-name="ripple"] {
+  display: none !important;
+}
